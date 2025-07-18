@@ -1,13 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="module" src="./js/main.js"></script>
-  </body>
+    <title>CV-editor</title>
+</head>
+<body>
+<div class="cv-editor">
+    <section class="cv-container cv-header">
+        <img src="./public/DSC_0003.JPG">
+        <div class="name-profession-container style-gray">
+            <h5>Hello 👋🏻 I'm</h5>
+            <div>
+                <span class="name bold" id="name">Artem Dubrovsky</span>
+                <span class="profession normal f12" id="profession">Brand/Logo Designer</span>
+            </div>
+        </div>
+        <div class="langs style-gray">
+            <h5 class="poppins-medium">Languages</h5>
+            <div class="lang-container">
+                <span class="f10" id="l1">Russian</span>
+                <div class = "lang-bar" id="lb1"></div>
+            </div>
+            <div class="lang-container">
+                <span class="f10" id="l2">English</span>
+                <div class = "lang-bar" id="lb2"></div>
+            </div>
+            <div class="lang-container">
+                <span class="f10" id="l3">Japanese</span>
+                <div class = "lang-bar" id="lb3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cv-container cv-about">
+
+    </section>
+
+    <section class="cv-container cv-experience">
+
+    </section>
+    <div class="modal-background"></div>
+</div>
+</body>
 </html>
