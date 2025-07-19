@@ -1,7 +1,8 @@
 .cv-header {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    gap: 12px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .cv-header img {
@@ -23,9 +24,12 @@
     font-size: 10px;
     font-weight: 500;
 }
-
+.name-profession-container span{
+    display: inline-block;
+}
 .name-profession-container .name {
     font-size: 12px;
+    margin-bottom: 4px;
 }
 
 .name-profession-container .profession {
@@ -35,12 +39,6 @@
 
 .langs{
     height: 125px;
-}
-
-.langs h5{
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 12px;
 }
 .lang-container{
     height: 20px;

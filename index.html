@@ -8,18 +8,18 @@
     <title>CV-editor</title>
 </head>
 <body>
-<div class="cv-editor">
+<div class="cv-editor" id="cv">
     <section class="cv-container cv-header">
         <img src="./public/DSC_0003.JPG">
         <div class="name-profession-container style-gray">
             <h5>Hello 👋🏻 I'm</h5>
             <div>
-                <span class="name bold" id="name">Artem Dubrovsky</span>
-                <span class="profession normal f12" id="profession">Brand/Logo Designer</span>
+                <span class="name bold f14" id="name">Artem Dubrovsky</span>
+                <span class="profession normal f12" id="profession">Frontend-developer</span>
             </div>
         </div>
         <div class="langs style-gray">
-            <h5 class="poppins-medium">Languages</h5>
+            <h4 class="poppins-medium">Languages</h4>
             <div class="lang-container">
                 <span class="f10" id="l1">Russian</span>
                 <div class = "lang-bar" id="lb1"></div>
@@ -36,7 +36,68 @@
     </section>
 
     <section class="cv-container cv-about">
+        <div class = "education-container style-gray">
+            <h4 class="poppins-medium f14">Education</h4>
 
+            <div class="style-green education-card ec-first">
+                <span class="f10 normal" id = "e1y">2025-2029</span>
+                <img src="public/Vector.png">
+                <span class="f10 normal" id="e1h">Applied Computer Science</span>
+                <p class="hashtags">
+                    #Math
+                    #Programming
+                    #OOP
+                    #C++
+                    #Java
+                    #Pascal
+                </p>
+                <span>GSU</span>
+            </div>
+
+            <div class="education-card">
+                <span class="f10 normal" id = "e2y">2025</span>
+                <span class="f10 normal" id="e2h">High School</span>
+                <p class="hashtags">
+                    #Math
+                    #Physics
+                    #Programming
+                </p>
+                <span>GSRL</span>
+            </div>
+
+            <div class="education-card">
+                <span class="f10 normal" id = "e3y">2024</span>
+                <span class="f10 normal" id="e3h">InCT</span>
+                <p class="hashtags">
+                    #React
+                    #MobX
+                    #ChartJS
+                    #Git
+                </p>
+                <span>NDTP.by</span>
+            </div>
+        </div>
+
+        <div class="style-gray interests-container">
+            <h4 class="poppins-medium">Interests</h4>
+            <div class = "interests">
+                <span>Frontend</span>
+                <span>Backend</span>
+                <span>React</span>
+                <span>Angular</span>
+                <span>Develop</span>
+                <span>Chess</span>
+                <span>Karate</span>
+                <span>Math</span>
+                <span>Technologies</span>
+                <span>T-Bank</span>
+            </div>
+        </div>
+
+        <div class="style-black contacts-container f10">
+            <h4 class="poppins-medium normal f14">Let´s chat! I´m ready to work on excinting projects</h4>
+            <span class="thin">artemada2@gmail.com | +395 12 345 6789</span>
+        </div>
     </section>
 
     <section class="cv-container cv-experience">
