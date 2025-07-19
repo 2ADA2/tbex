@@ -1,0 +1,80 @@
+.modal-background-hidden {
+    display: none;
+}
+
+.modal-background-show {
+    display: block;
+    position: fixed;
+    animation: show-modal-back 100ms linear both;
+    z-index: 1000;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+}
+
+.modal-hidden{
+    display: none;
+}
+.modal-hidden form{
+    display: none;
+}
+.modal{
+    position: fixed;
+    z-index: 3001;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    right:0;
+    animation: show-modal 100ms linear both;
+}
+.modal form{
+    width: 400px;
+    height: auto;
+    background:white;
+    padding:12px;
+    border-radius: 12px;
+}
+.modal form input{
+    width: 100%;
+}
+.modal form button {
+    width: 70px;
+    height: 24px;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top:4px;
+}
+#submit-button{
+    background-color: rgb(40, 217, 121);
+}
+#submit-button:hover{
+    background-color: rgb(35, 194, 108);
+}
+#cancel-button:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+@keyframes show-modal-back {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@keyframes show-modal {
+    0% {
+        top:0;
+        transform:scale(1, 0.5);
+    }
+    100% {
+        top:50px;
+        transform:scale(1,1);
+    }
+}
