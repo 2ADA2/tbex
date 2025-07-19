@@ -21,5 +21,5 @@ export async function downloadPDF() {
 
     pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
 
-    pdf.save("odna-stranica.pdf");
+    pdf.save("cv.pdf");
 }
