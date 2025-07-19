@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 :root {
-  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 500;
 
   color-scheme:light dark;
@@ -51,19 +51,19 @@ h1,h2,h3,h4,h5{
 
 .style-green{
   background-color: rgb(40,217,121);
-  border-radius: 15px;
+  border-radius: 12px;
   color:white;
 }
 
 .style-gray{
   background-color: rgb(240,240,240);
-  border-radius: 15px;
+  border-radius: 12px;
   padding:12px;
 }
 
 .style-black{
   background-color: rgb(0, 0, 0);
-  border-radius: 15px;
+  border-radius: 12px;
   padding:12px;
   color: white;
 }

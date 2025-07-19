@@ -1,0 +1,126 @@
+.cv-experience {
+    margin-top:20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:125px 1fr;
+}
+
+.cv-experience .tools-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.tools-container h4{
+    align-self: flex-start;
+    margin-bottom:0 !important;
+}
+
+.tools{
+    position: relative;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    flex-wrap: wrap;
+    padding:16px 4px;
+    background: white;
+    border-radius: 6px;
+    grid-gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.tools-header-container {
+    font-size: 10px;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: -5px;
+}
+.tools-header-container span{
+    background: black;
+    color:white;
+    padding:2px 6px;
+    border-radius: 60px;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.tools .tools-img-container{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools-img-container img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/*Experience-container*/
+
+.experience-container{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.experience-container .experience-card{
+    padding: 8px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:125px 1fr;
+    font-size: 8px;
+    font-weight: 400;
+    grid-gap: 8px;
+}
+
+.experience-card{
+    background: white;
+    color: black;
+}
+
+.experience-card .experience-card-header{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.most{
+    color:#DDF163;
+    background: #7E731266;
+    padding:2px 6px;
+    border-radius: 60px;
+}
+
+.experience-card .experience-card-period{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card .experience-card-period div{
+    display: flex;
+    gap:6px;
+    color:#3F3D3D;
+    position: relative;
+    bottom: 2px;
+}
+
+.experience-container .style-green .experience-card-period div{
+    color:#EBF9F2;
+}
+
+.experience-card-text{
+    line-height: 12px;
+}
+.experience-card-text ul {
+    padding-left: 20px;
+    margin:0;
+}
+

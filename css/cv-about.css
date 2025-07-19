@@ -34,7 +34,7 @@
 }
 
 .education-card span:first-child {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .education-container .ec-first {
@@ -65,7 +65,7 @@
 }
 
 .education-card span:last-child {
-    margin-top: 12px;
+    margin-top: 8px;
     flex: 1 1 auto;
     display: flex;
     align-items: flex-end;
