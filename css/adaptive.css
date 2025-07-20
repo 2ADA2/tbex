@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+    .button-controller{
+        width: auto;
+    }
+    .cv-header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cv-header .name-profession-container,
+    .cv-header .langs,
+    .cv-header img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cv-header .langs {
+        grid-column: 1/3;
+    }
+
+    .langs .lang-container {
+        grid-template-columns: 100px auto;
+    }
+
+    .cv-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 92px;
+    }
+
+    .cv-about .education-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .cv-about .interests-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .cv-about .contacts-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .experience-container .experience-card{
+        grid-template-columns: 1fr;
+    }
+    .experience-container .experience-card .experience-card-text{
+        grid-column: 1/2;
+    }
+    .experience-card-text ul{
+        padding-left: 10px;
+    }
+}
+

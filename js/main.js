@@ -38,8 +38,21 @@ document.addEventListener("click", (e) => {
 
         modalForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            if(!target){
+                return
+            }
             target.innerText = newText.value
             closeModal();
+            let parent = target.parentElement
+            while (!parent.classList.contains('changeable-parent')) {
+                parent = parent.parentElement
+            }
+            parent.classList.add('changeable-parent-animated')
+            setTimeout(() => {
+                parent.classList.remove('changeable-parent-animated')
+                target = null
+            },200)
+
         })
 
         function closeModal() {

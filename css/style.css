@@ -4,6 +4,7 @@
 @import "cv-about.css";
 @import "controller.css";
 @import "modal.css";
+@import "adaptive.css";
 
 * {
     box-sizing: border-box;

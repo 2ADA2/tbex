@@ -1,24 +1,54 @@
-.button-controller{
+.button-controller {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 600px;
     height: 100px;
     margin: 0 auto;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240, 240, 240);
 }
-.button-controller button{
-    background-color: rgb(40,217,121);
+
+.button-controller button {
+    background-color: rgb(40, 217, 121);
     color: white;
     border: none;
-    padding:2px 6px;
+    padding: 2px 6px;
     border-radius: 4px;
     cursor: pointer;
 }
-.button-controller button:hover{
+
+.button-controller button:hover {
     background-color: rgb(38, 201, 112);
 }
 
-.changeable{
+.changeable {
     cursor: pointer;
+}
+
+.changeable-parent {
+    position: relative;
+    transition-duration: 100ms;
+}
+
+.changeable-parent:hover {
+    bottom: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.changeable-parent-animated {
+    animation: parent-anim 200ms ease-in;
+}
+
+@keyframes parent-anim {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: 0;
+        top:30px;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
