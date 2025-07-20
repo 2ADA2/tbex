@@ -1,0 +1,16 @@
+body {
+    --x: 0px;
+    --y: 0px;
+    --scale: 0;
+}
+
+.wave {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    transform: translate3d(var(--x), var(--y), 0) scale(var(--scale));
+}

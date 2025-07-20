@@ -28,6 +28,7 @@
 .changeable-parent {
     position: relative;
     transition-duration: 100ms;
+    overflow: hidden;
 }
 
 .changeable-parent:hover {

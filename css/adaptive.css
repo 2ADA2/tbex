@@ -42,8 +42,7 @@
     }
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 550px) {
     .experience-container .experience-card{
         grid-template-columns: 1fr;
     }
@@ -54,4 +53,26 @@
         padding-left: 10px;
     }
 }
+@media (max-width: 450px) {
+    .cv-experience {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .cv-experience .tools-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto auto;
+        align-items: start;
+    }
+    .cv-experience .tools-container h4{
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    .cv-experience .tools-container .tools{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
 

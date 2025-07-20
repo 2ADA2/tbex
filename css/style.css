@@ -4,6 +4,7 @@
 @import "cv-about.css";
 @import "controller.css";
 @import "modal.css";
+@import "ripple.css";
 @import "adaptive.css";
 
 * {

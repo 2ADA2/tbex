@@ -1,12 +1,12 @@
 import '../css/style.css'
 import {downloadPDF} from "./downloadPdf.js";
+import {ripple} from "./ripple.js";
 
 const downloader = document.getElementById('pdf-downloader');
 
 downloader.addEventListener('click', (e) => {
     downloadPDF();
 })
-
 
 document.addEventListener("click", (e) => {
     let target = e.target
@@ -63,6 +63,8 @@ document.addEventListener("click", (e) => {
 
     }
 })
+
+ripple()
 
 
 
