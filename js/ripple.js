@@ -5,6 +5,10 @@ export function ripple() {
     let isAnimation = false
     const elements = document.getElementsByClassName('changeable-parent')
     for (let element of elements) {
+        if(element.classList.contains('education-card') || element.classList.contains('experience-card')) {
+            continue
+        }
+
         element.addEventListener('click', function (e) {
             element.appendChild(el)
             console.log(1)
