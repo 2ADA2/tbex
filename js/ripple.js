@@ -2,20 +2,19 @@ export function ripple() {
     const el = document.createElement('span');
     el.classList.add('wave');
 
-    let isAnimation = false
+    let isAnimation = false;
     const elements = document.getElementsByClassName('changeable-parent')
     for (let element of elements) {
         if(element.classList.contains('education-card') || element.classList.contains('experience-card')) {
-            continue
+            continue;
         }
 
         element.addEventListener('click', function (e) {
-            element.appendChild(el)
-            console.log(1)
+            element.appendChild(el);
             if (isAnimation) {
-                return
+                return;
             }
-            isAnimation = true
+            isAnimation = true;
             el.style.setProperty('--x', e.clientX - this.getBoundingClientRect().left - el.offsetWidth / 2 + 'px');
             el.style.setProperty('--y', e.clientY - this.getBoundingClientRect().top - el.offsetHeight / 2 + 'px');
 
@@ -35,7 +34,7 @@ export function ripple() {
             setTimeout(function () {
                 clearInterval(scaleUp);
                 el.style.setProperty('--scale', 0);
-                isAnimation = false
+                isAnimation = false;
                 el.remove();
             }, animationTime);
         });

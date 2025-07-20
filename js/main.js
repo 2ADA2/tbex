@@ -1,4 +1,4 @@
-import '../css/style.css'
+import '../css/style.css';
 import {downloadPDF} from "./downloadPdf.js";
 import {ripple} from "./ripple.js";
 
@@ -9,7 +9,7 @@ downloader.addEventListener('click', (e) => {
 })
 
 document.addEventListener("click", (e) => {
-    let target = e.target
+    let target = e.target;
     if (target.classList.contains('changeable')) {
         const modalForm = document.getElementById('modal-form');
         const modal = document.getElementById('modal');
@@ -18,10 +18,16 @@ document.addEventListener("click", (e) => {
         const newText = document.getElementById('new-text');
 
 
-        modal.className = "background-modal-show modal"
-        modalBackground.className = "modal-background-show"
+        modal.className = "background-modal-show modal";
+        modalBackground.className = "modal-background-show";
         newText.value = target.innerText;
-        newText.focus()
+        newText.focus();
+
+        function closeModal() {
+            modalBackground.className = "background-modal-hidden";
+            modal.className = "modal-hidden";
+            document.body.style.overflow = "auto";
+        }
 
         document.addEventListener("keydown", (e) => {
             if(e.key === "Escape"){
@@ -29,7 +35,7 @@ document.addEventListener("click", (e) => {
             }
         })
 
-        document.body.style.overflow = "hidden"
+        document.body.style.overflow = "hidden";
 
         cancelButton.addEventListener('click', (e) => {
             e.preventDefault();
@@ -39,30 +45,23 @@ document.addEventListener("click", (e) => {
         modalForm.addEventListener('submit', (e) => {
             e.preventDefault();
             if(!target){
-                return
+                return;
             }
-            target.innerText = newText.value
+            target.innerText = newText.value;
             closeModal();
-            let parent = target.parentElement
+            let parent = target.parentElement;
             while (!parent.classList.contains('changeable-parent')) {
-                parent = parent.parentElement
+                parent = parent.parentElement;
             }
-            parent.classList.add('changeable-parent-animated')
+            parent.classList.add('changeable-parent-animated');
             setTimeout(() => {
-                parent.classList.remove('changeable-parent-animated')
-                target = null
+                parent.classList.remove('changeable-parent-animated');
+                target = null;
             },200)
 
         })
-
-        function closeModal() {
-            modalBackground.className = "background-modal-hidden";
-            modal.className = "modal-hidden"
-            document.body.style.overflow = "auto"
-        }
-
     }
-})
+});
 
 ripple()
 
