@@ -27,6 +27,7 @@ document.addEventListener("click", (e) => {
             modalBackground.className = "background-modal-hidden";
             modal.className = "modal-hidden";
             document.body.style.overflow = "auto";
+            target = null
         }
 
         document.addEventListener("keydown", (e) => {
