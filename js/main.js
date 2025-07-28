@@ -27,11 +27,11 @@ document.addEventListener("click", (e) => {
             modalBackground.className = "background-modal-hidden";
             modal.className = "modal-hidden";
             document.body.style.overflow = "auto";
-            target = null
         }
 
         document.addEventListener("keydown", (e) => {
             if(e.key === "Escape"){
+                target = null
                 closeModal();
             }
         })
@@ -40,6 +40,7 @@ document.addEventListener("click", (e) => {
 
         cancelButton.addEventListener('click', (e) => {
             e.preventDefault();
+            target = null
             closeModal();
         })
 
